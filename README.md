@@ -31,3 +31,7 @@ przez ręczne przełączanie banków pamięci (pomysł z https://github.com/mafe
 ## Jeszcze kilka porad dla startujących z tym programatorem:
 - Oryginalna aplikacja pod dosa chodzi bardzo dobrze z emulatorem DOSbox (https://www.dosbox.com/), trzeba tylko przekierować port COM emulatora do rzeczywistego portu komputera (może być adapter na USB, programator używa tylko linii RXD i TXD)
 - Przypadki związane z losowymi błędami odczytu i zapisu mogą być spowodowane kiepskim zasilaniem. Powinien wystarczyć zasilacz niestabilizowany, oryginalnie chyba był 9V 500mA. Programator ma własny stabilizator 5V i przetwornicę impulsową (nie zapominajmy, że on obsługuje też bardzo stare EPROMy 21V!)
+
+## Render 3D płytki
+dla ciekawych
+![Płytka3D](/serprog_16bit_multi_adapter_3d.jpg)
