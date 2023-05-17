@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "zif_socket")(type "KiCad")(uri "/home/marcin/Dokumenty/kicad/kicad_zif-socket/zif_socket.kicad_sym")(options "")(descr ""))
+)

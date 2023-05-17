@@ -1,0 +1,85 @@
+
+(rules PCB serprog_16bit_multi_adapter
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 942)
+    (layer_rule "Górna sygnałowa"
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule "Dolna sygnałowa"
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd-smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle "Górna sygnałowa" 800.0 0.0 0.0)
+    )
+    (shape
+      (circle "Dolna sygnałowa" 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Górna sygnałowa Dolna sygnałowa)
+    )
+  )
+  (class "kicad_default"
+    GND VCC "/_A14" "/A_Latch" /~{G} /VPP "/_A15" "/_A11"
+    /A6 /A5 /A4 /A3 /A2 /A1 /A0 "/~{WR_Low}"
+    /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7
+    /~{E} /A9 "/_A10" /A8 /A7 "/_A12" "/_A13" "/_A16"
+    "/_A17" /B0 /A17 /Q0 /Q8 /Q1 /Q9 /Q2
+    /Q10 /Q3 /Q11 /Q4 /Q12 /Q5 /Q13 /Q6
+    /Q14 /Q7 /Q15 /~{BYTE}{slash}VPP /A16 /A15 /A14 /A13
+    /A12 /A11 /A10 /B1 "Net-(J2-Pin_13)" /B2{slash}A20 /~{WR} "/~{RD_Low}"
+    "/~{RDWR_High}" "Net-(Q1-C)" "Net-(Q1-B)" "Net-(Q2-C)" "Net-(Q2-B)" "unconnected-(U3-B7-Pad11)" "unconnected-(U3-B6-Pad12)" "unconnected-(U3-B2-Pad16)"
+    "unconnected-(U3-B1-Pad17)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Górna sygnałowa Dolna sygnałowa)
+    )
+  )
+)
