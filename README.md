@@ -34,4 +34,5 @@ przez ręczne przełączanie banków pamięci (pomysł z https://github.com/mafe
 
 ## Render 3D płytki
 dla ciekawych
+
 ![Płytka3D](/serprog_16bit_multi_adapter_3d.jpg)
