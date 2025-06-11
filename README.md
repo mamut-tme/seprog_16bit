@@ -4,7 +4,8 @@
 ## Info in english:
 This repo describes a 16-bit chip adapter for the eprom programmer "Seprog" from the polish manufacturer WG Electronics. The rest will be in polish, because I don't belive that anyone outside of Poland will be interested in this information.
 
-To repozytorium zawiera schemat i płytkę zaprojektowaną w oprogramowaniu Kicad do adaptera do 16-bitowych układów EPROM (tych kasowalnych UV) do programatora Seprog firmy WG Electronics. Schemat opracowałem przez analizę działania mojego programatora z firmware w wersji 1.49 (bardzo możliwe, że niższe wersje oprogramowania nie wspierają tych układów).
+To repozytorium zawiera schemat i płytkę zaprojektowaną w oprogramowaniu Kicad do adaptera do 16-bitowych układów EPROM (tych kasowalnych UV) do programatora Seprog firmy WG Electronics. Schemat opracowałem przez analizę działania mojego programatora z firmware w wersji 1.49 (bardzo możliwe, że niższe wersje oprogramowania nie wspierają tych układów, 1.00 nie wspiera - sprawdzono).
+
 Obsługiwane układy (natywnie, przez programator i oryginalne oprogramowanie), podstawka DIL40:
 - 27C1024
 - 27C2048
